@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Soccer Random Mini</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+<style>
+  body {
+    margin: 0;
+    background: #1e7f43;
+    overflow: hidden;
+    touch-action: none;
+  }
+
+  canvas {
+    display: block;
+    margin: auto;
+    background: #3cb371;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Mobil tuşlar */
+  .control-btn {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    opacity: 0.85;
+    z-index: 5;
+  }
+
+  /* Kırmızı – sol alt */
+  #btnP1 {
+    left: 20px;
+    bottom: 20px;
+    background: red;
+  }
+
+  /* Mavi – sağ alt */
+  #btnP2 {
+    right: 20px;
+    bottom: 20px;
+    background: blue;
+  }
+</style>
+</head>
+
+<body>
+<canvas id="gameCanvas" width="900" height="450"></canvas>
+
+<button id="btnP1" class="control-btn"></button>
+<button id="btnP2" class="control-btn"></button>
+
+<script src="game.js"></script>
+</body>
+</html>
